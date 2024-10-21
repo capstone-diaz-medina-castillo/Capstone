@@ -1,18 +1,26 @@
 <template>
     <div class="max-w-screen-2xl">
-        <header>
+        <header class="text-2xl font-medium mb-10">
+            <h1>Bienvenido a Red En Marcha, <strong class="text-blue-800">{{ actualUser.name }} {{
+                actualUser.second_name }}</strong></h1>
         </header>
-        <div>
-            <ul>
-            <li v-for="card in cards" class=" m-3">
-                <Cards></Cards>
-            </li>
-        </ul>
+        <div class="flex w-full justify-between">
+            <section class="flex flex-col w-6/12 h-full pr-3">
+                <HomeMiembrosDeEquipo></HomeMiembrosDeEquipo>
+            </section>
+            <section class="flex flex-col w-6/12 space-y-5 pl-3">
+                <div class="w-full">
+                    <HomeCasos></HomeCasos>
+                </div>
+                <div class="bg-green-500">
+
+                </div>
+            </section>
         </div>
     </div>
 </template>
 
 <script setup>
-const cards = ref(5)
-definePageMeta({layout:'main'})
+
+definePageMeta({ layout: 'main' })
 </script>

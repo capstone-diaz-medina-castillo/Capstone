@@ -49,12 +49,11 @@
   const isHovered = ref('')
   
   const navigationItems = [
-    { href: '/', emoji: '🏠', text: 'Inicio' },
-    {href:'/panel/ninos', emoji: '' , text:'Niños'},
+    { href: '/', emoji: '', text: 'Inicio' },
+    {href:'/panel/casos', emoji: '' , text:'Casos'},
     {href:'/panel/encuestas', emoji: '' , text:'Encuestas'},
+    {href: '/panel/miembros-del-equipo', emoji:'', text: 'Miembros del equipo'},
     {href:'/panel/configuraciones', emoji: '' , text:'Configuraciones'},
-
-
   ]
   
   const logout = () => {
