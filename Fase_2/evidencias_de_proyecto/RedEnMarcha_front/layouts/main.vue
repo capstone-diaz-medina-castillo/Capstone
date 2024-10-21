@@ -6,7 +6,8 @@
           <div class="h-20 w-20 rounded-full bg-gray-600 flex items-center justify-center text-2xl font-bold transition-transform duration-300 hover:scale-110">
             <img :src="actualUser.avatar" :alt="actualUser.name" class="h-20 w-20 rounded-full bg-gray-600 flex items-center justify-center text-2xl font-bold transition-transform duration-300 hover:scale-110 object-cover overflow-hidden">
           </div>
-          <span class="mt-2 text-xl font-semibold">{{ actualUser.name }}</span>
+          <span class="mt-2 text-xl font-semibold">{{ actualUser.name }} {{ actualUser.second_name }}</span>
+          <span class="text-sm">{{ actualUser.role }}</span>
         </div>
   
         <nav class="flex-grow">

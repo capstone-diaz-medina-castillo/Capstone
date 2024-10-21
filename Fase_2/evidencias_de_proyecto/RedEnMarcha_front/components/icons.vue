@@ -1,6 +1,6 @@
 <script setup>
-import { ArrowLeftIcon, ChevronLeftIcon, ChevronRightIcon ,ArrowDownTrayIcon , ShareIcon} from '@heroicons/vue/20/solid';
-import {UserPlusIcon, CheckCircleIcon, XCircleIcon, EyeIcon, EllipsisVerticalIcon, ArrowRightEndOnRectangleIcon, MagnifyingGlassIcon ,ArrowPathIcon ,CheckIcon,PlusIcon,AdjustmentsHorizontalIcon ,ExclamationTriangleIcon,BellIcon,InformationCircleIcon,Bars3Icon,CalendarIcon,QrCodeIcon,HomeIcon,XMarkIcon,TicketIcon,UserGroupIcon,Cog6ToothIcon,MapPinIcon,ArrowRightStartOnRectangleIcon,PencilIcon,HomeModernIcon,ClockIcon , PhoneIcon ,TrashIcon} from '@heroicons/vue/24/outline';
+import { ArrowLeftIcon, ChevronLeftIcon, ChevronRightIcon, ArrowDownTrayIcon, ShareIcon } from '@heroicons/vue/20/solid';
+import { UserIcon, UserPlusIcon, EnvelopeIcon, CheckCircleIcon, XCircleIcon, EyeIcon, EllipsisVerticalIcon, ArrowRightEndOnRectangleIcon, MagnifyingGlassIcon, ArrowPathIcon, CheckIcon, PlusIcon, AdjustmentsHorizontalIcon, ExclamationTriangleIcon, BellIcon, InformationCircleIcon, Bars3Icon, CalendarIcon, QrCodeIcon, HomeIcon, XMarkIcon, TicketIcon, UserGroupIcon, Cog6ToothIcon, MapPinIcon, ArrowRightStartOnRectangleIcon, PencilIcon, HomeModernIcon, ClockIcon, PhoneIcon, TrashIcon } from '@heroicons/vue/24/outline';
 const props = defineProps({
     name: {
         type: String,
@@ -34,16 +34,18 @@ const iconMap = {
     'exclamationTriangle': ExclamationTriangleIcon,
     'check': CheckIcon,
     'phone': PhoneIcon,
-    'trash' : TrashIcon,
-    'arrowPath' : ArrowPathIcon,
-    'ajustes' : AdjustmentsHorizontalIcon,
-    'search' : MagnifyingGlassIcon,
-    'arrowLeft' : ArrowLeftIcon,
-    'ellipsisVertical' : EllipsisVerticalIcon,
-    'eye' : EyeIcon,
-    'xCircle' : XCircleIcon,
-    'checkCircle' : CheckCircleIcon,
-    'userPlus' : UserPlusIcon
+    'trash': TrashIcon,
+    'arrowPath': ArrowPathIcon,
+    'ajustes': AdjustmentsHorizontalIcon,
+    'search': MagnifyingGlassIcon,
+    'arrowLeft': ArrowLeftIcon,
+    'ellipsisVertical': EllipsisVerticalIcon,
+    'eye': EyeIcon,
+    'xCircle': XCircleIcon,
+    'checkCircle': CheckCircleIcon,
+    'userPlus': UserPlusIcon,
+    'envelope': EnvelopeIcon,
+    'user': UserIcon
 };
 </script>
 
