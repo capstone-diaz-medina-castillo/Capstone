@@ -114,37 +114,37 @@ export const casos = ref([
 export const grantedAccess = ref([
     {
         userId: 'user1',  // Raul Medina
-        caseId: '1',      // Caso de Juan Pérez
+        redId: '1',      // Caso de Juan Pérez
         permission: 'read' // solo lectura
     },
     {
         userId: 'user2',  // Jhonny Castillo
-        caseId: '1',      // Caso de Juan Pérez
+        redId: '1',      // Caso de Juan Pérez
         permission: 'edit' // edición
     },
     {
         userId: 'user1',  // Raul Medina
-        caseId: '2',      // Caso de Sofía Ramírez
+        redId: '2',      // Caso de Sofía Ramírez
         permission: 'edit' // edición
     },
     {
         userId: 'user2',  // Jhonny Castillo
-        caseId: '2',      // Caso de Sofía Ramírez
+        redId: '2',      // Caso de Sofía Ramírez
         permission: 'read' // solo lectura
     },
     {
         userId: 'user3',  // Jesus Díaz
-        caseId: '3',      // Caso de Mateo Hernández
+        redId: '3',      // Caso de Mateo Hernández
         permission: 'read' // solo lectura
     },
     {
         userId: 'user3',  // Jesus Díaz
-        caseId: '4',      // Caso de Valentina Martínez
+        redId: '4',      // Caso de Valentina Martínez
         permission: 'edit' // edición
     },
     {
         userId: 'user1',  // Raul Medina
-        caseId: '4',      // Caso de Valentina Martínez
+        redId: '4',      // Caso de Valentina Martínez
         permission: 'no_access' // sin permisos
     }
 ]);
@@ -169,3 +169,4 @@ export const profesions = ref([
         name:'Psiquiatra'
     }
 ])
+

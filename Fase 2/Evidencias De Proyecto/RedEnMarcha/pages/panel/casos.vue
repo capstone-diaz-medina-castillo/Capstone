@@ -4,22 +4,31 @@
             <div class="flex flex-col space-y-3">
                 <h1 class="flex justify-start text-xl font-medium">Casos</h1>
                 <h2>Aqui podrás ver cada uno de los casos que se están llevando a cabo y gestionarlos</h2>
-            </div> <button class="bg-blue-800 p-3 rounded-2xl text-white  font-medium">Agregar caso</button>
+            </div>
+            <button @click="goToCreate" class="bg-blue-800 p-3 rounded-lg text-white  font-medium">Agregar
+                caso</button>
         </header>
         <div>
-            <Table :data="formattedCasos" :columns="columns"></Table>
+            <section class="w-full">
+                <div class="flex w-full">
+                    <input type="text">
+                    <button>Buscar</button>
+                </div>
+            </section>
+            <Table :data="formattedCasos" :columns="columns" :button="true" text-button="Ver caso"
+                @button-click="goToCase"></Table>
         </div>
     </div>
 </template>
 
 <script setup>
 import { computed, ref } from 'vue';
-
+const router = useRouter();
 // Datos de las columnas, donde las celdas se llenan con funciones personalizadas
 const columns = ref([
     {
         key: 'nna',
-        header: 'NNA',
+        header: 'Niño/a',
     },
     {
         key: 'cuidador',
@@ -30,6 +39,9 @@ const columns = ref([
         header: 'Profesionales Asignados',
     }
 ]);
+const goToCreate = () => { router.push('/casos/crear-caso'); };
+
+const goToCase = (row) => { router.push(`/casos/caso/${row.id}`); };
 
 // Computed para formatear los datos de los casos
 const formattedCasos = computed(() => {

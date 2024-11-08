@@ -7,7 +7,7 @@
                     aquí podrás ver a los miembros de tu equipo, agregarlos y editarles los permisos que poseen.
                 </h2>
             </div>
-            <button @click="goToNewUser" class="bg-blue-800 p-3 rounded-2xl text-white  font-medium">Agregar
+            <button @click="goToNewUser" class="bg-blue-800 p-3 rounded-lg text-white  font-medium">Agregar
                 miembro</button>
         </header>
         <div class="w-full">

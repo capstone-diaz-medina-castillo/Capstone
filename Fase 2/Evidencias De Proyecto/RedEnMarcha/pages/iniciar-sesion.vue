@@ -25,6 +25,11 @@
                 :class="[isFormValid ? 'bg-red-600 text-white hover:bg-red-700 focus:ring-red-500' : 'bg-gray-300 text-gray-500 cursor-not-allowed']">Ingresar
                 </button>
             </form>
+            <div>
+                <p>
+                    Olvidaste tu contraseña? <NuxtLink to="/recuperar-contrasena" class="text-blue-600">Haz click aquí</NuxtLink>
+                </p>
+            </div>
         </div>
     </div>
 </template>

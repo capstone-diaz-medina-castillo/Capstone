@@ -1,10 +1,10 @@
 <!-- layouts/SidebarLayout.vue -->
 <template>
     <div class="flex h-screen">
-      <div class="flex flex-col w-64 bg-gray-800 text-white transition-all duration-300 ease-in-out">
+      <div class="flex flex-col w-64 bg-blue-900 text-white transition-all duration-300 ease-in-out">
         <div class="flex flex-col items-center mt-8 mb-6">
-          <div class="h-20 w-20 rounded-full bg-gray-600 flex items-center justify-center text-2xl font-bold transition-transform duration-300 hover:scale-110">
-            <img :src="actualUser.avatar" :alt="actualUser.name" class="h-20 w-20 rounded-full bg-gray-600 flex items-center justify-center text-2xl font-bold transition-transform duration-300 hover:scale-110 object-cover overflow-hidden">
+          <div class="h-20 w-20 rounded-full bg-blue-600 flex items-center justify-center text-2xl font-bold transition-transform duration-300 hover:scale-110">
+            <img :src="actualUser.avatar" :alt="actualUser.name" class="h-20 w-20 rounded-full bg-blue-600 flex items-center justify-center text-2xl font-bold transition-transform duration-300 hover:scale-110 object-cover overflow-hidden">
           </div>
           <span class="mt-2 text-xl font-semibold">{{ actualUser.name }} {{ actualUser.second_name }}</span>
           <span class="text-sm">{{ actualUser.role }}</span>
@@ -16,7 +16,7 @@
               <NuxtLink 
                 :to="item.href" 
                 class="flex items-center px-4 py-2 transition-all duration-200 ease-in-out"
-                :class="[isHovered === item.href ? 'bg-gray-700 translate-x-2' : 'hover:bg-gray-700']"
+                :class="[isHovered === item.href ? 'bg-blue-700 translate-x-2' : 'hover:bg-blue-700']"
                 @mouseenter="isHovered = item.href"
                 @mouseleave="isHovered = ''"
               >
@@ -46,7 +46,7 @@
   </template>
   
   <script setup>
-  
+  const router = useRouter()
   const isHovered = ref('')
   
   const navigationItems = [
@@ -59,6 +59,6 @@
   
   const logout = () => {
     console.log('Cerrar sesión')
-    // Aquí iría la lógica de cierre de sesión
+    router.push('/iniciar-sesion')
   }
   </script>

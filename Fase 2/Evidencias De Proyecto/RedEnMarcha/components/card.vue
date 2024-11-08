@@ -1,8 +1,8 @@
 <!-- components/UserCard.vue -->
 <template>
     <div
-        class="w-full max-w-sm bg-white rounded-lg border border-l-blue-500 border-t-blue-500 border-b-purple-500  border-r-purple-500 overflow-hidden transform transition duration-300 hover:scale-105 shadow-xl shadow-gray-400">
-        <div class="relative h-32 bg-gradient-to-r from-blue-500 to-purple-500 animate-gradient">
+        class="w-full max-w-sm bg-white rounded-lg border border-l-blue-500 border-t-blue-500 border-b-red-500  border-r-red-500 overflow-hidden transform transition duration-300 hover:scale-105 shadow-xl shadow-gray-400">
+        <div class="relative h-32 bg-gradient-to-r from-blue-500 to-red-500 animate-gradient">
             <div class="absolute -bottom-12 left-1/2 transform -translate-x-1/2">
                 <div v-if="photo" class="relative group">
                     <img :src="photo" :alt="name"

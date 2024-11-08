@@ -6,7 +6,7 @@
                 <h2>Aquí podras crear y gestionar las diferentes encuestas que se podrán aplicar en los diferentes
                     casos.</h2>
             </div>
-            <button class="bg-blue-800 p-3 rounded-2xl text-white  font-medium">Agregar encuesta</button>
+            <button class="bg-blue-800 p-3 rounded-lg text-white  font-medium">Agregar encuesta</button>
         </header>
         <div>
 
