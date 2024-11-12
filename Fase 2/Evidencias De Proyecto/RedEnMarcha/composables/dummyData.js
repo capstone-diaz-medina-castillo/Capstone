@@ -1,14 +1,7 @@
 export const actualUser = ref({
-    name: 'Jesus',
-    second_name: 'Díaz',
-    avatar: 'https://musicland.cl/wp-content/uploads/2020/09/TYLERFLOWER-800x800.jpg',
-    role: 'admin',
-    profesion: 'admin',
-    email: 'jesu.diazp@duocuc.cl',
-    password: 'jesus261201',
 });
 
-export const otherUsers = ref([
+export const users = ref([
     {
         id: 'user1',
         name: 'Raul',

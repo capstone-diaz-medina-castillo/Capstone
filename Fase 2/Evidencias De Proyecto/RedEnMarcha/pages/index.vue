@@ -8,7 +8,7 @@
             <section class="flex flex-col w-6/12 h-full pr-3">
                 <HomeMiembrosDeEquipo></HomeMiembrosDeEquipo>
             </section>
-            <section class="flex flex-col w-6/12 space-y-5 pl-3">
+            <section class="flex flex-col w-6/12 h-full space-y-5 pl-3">
                 <div class="w-full">
                     <HomeCasos></HomeCasos>
                 </div>

@@ -12,7 +12,7 @@
         </header>
         <div class="w-full">
             <Columns>
-                <Card v-for="member in otherUsers" :name="`${member.name} ${member.second_name}`" :photo="member.avatar"
+                <Card v-for="member in users" :name="`${member.name} ${member.second_name}`" :photo="member.avatar"
                     :profesion="member.profesion" :email="member.email" :role="member.role">
                 </Card>
             </Columns>

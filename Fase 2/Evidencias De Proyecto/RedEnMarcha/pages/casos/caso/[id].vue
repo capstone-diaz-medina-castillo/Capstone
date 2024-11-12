@@ -70,7 +70,7 @@
             <section class="bg-white p-6 rounded-lg shadow-md">
                 <div class="flex justify-between w-full items-center" >
                     <h3 class="text-lg font-semibold text-gray-800 mb-4">Formularios</h3>
-                    <button class="p-3 bg-blue-600 text-white rounded-lg transform transition-all duration-200 hover:bg-blue-800 hover:scale-105">Agregar formulario</button>
+                    <button class="p-3 bg-blue-600 text-white rounded-lg font-medium transform transition-all duration-200 hover:bg-blue-800 hover:scale-105">Agregar formulario</button>
                 </div>
                 <div>
 

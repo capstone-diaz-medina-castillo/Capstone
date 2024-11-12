@@ -31,4 +31,6 @@ const caso = ref({
         { id: 'user2', name: 'Jhonny Castillo', profesion: 'psiquiatra' }
     ]
 })
+
+definePageMeta({layout: 'main'})
 </script>

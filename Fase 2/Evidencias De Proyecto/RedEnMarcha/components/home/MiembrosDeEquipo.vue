@@ -15,14 +15,14 @@
             </div>
         </header>
         <div class="w-full">
-            <div v-if="otherUsers.length == 0 && loadingProfiles == false">
+            <div v-if="users.length == 0 && loadingProfiles == false">
                 <DontHave title="No se ha encontrado perfiles." subtitle="No tiene perfiles registrados." />
             </div>
             <div v-if="loadingProfiles == true" class="flex w-full h-full justify-center items-center align-middle">
                 <Loader to-load="perfiles"></Loader>
             </div>
-            <ul class="space-y-4 overflow-y-auto overflow-x-hidden" v-if="otherUsers.length >= 1 && loadingProfiles == false">
-                <li v-for="profile in otherUsers" :key="profile.id" class="w-full">
+            <ul class="space-y-4 overflow-y-auto overflow-x-hidden" v-if="users.length >= 1 && loadingProfiles == false">
+                <li v-for="profile in users" :key="profile.id" class="w-full">
                     <button @click="ViewGrantedUser(profile)"
                         class=" w-full flex border border-gray-200 items-center gap-4 bg-white rounded-lg shadow-lg p-4 transition-all duration-200 hover:shadow-xl hover:scale-105">
                         <img :src="profile.avatar || 'https://via.placeholder.com/150'" alt="Avatar"
