@@ -15,12 +15,6 @@
             </div>
         </header>
         <div class="w-full">
-            <div v-if="users.length == 0 && loadingProfiles == false">
-                <DontHave title="No se ha encontrado perfiles." subtitle="No tiene perfiles registrados." />
-            </div>
-            <div v-if="loadingProfiles == true" class="flex w-full h-full justify-center items-center align-middle">
-                <Loader to-load="perfiles"></Loader>
-            </div>
             <ul class="space-y-4 overflow-y-auto overflow-x-hidden" v-if="users.length >= 1 && loadingProfiles == false">
                 <li v-for="profile in users" :key="profile.id" class="w-full">
                     <button @click="ViewGrantedUser(profile)"
