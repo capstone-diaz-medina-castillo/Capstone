@@ -12,9 +12,7 @@
 </template>
 
 <script setup>
-import { computed, ref } from 'vue';
 const router = useRouter()
-// Datos de las columnas, donde las celdas se llenan con funciones personalizadas
 const columns = ref([
   {
     key: 'nna',

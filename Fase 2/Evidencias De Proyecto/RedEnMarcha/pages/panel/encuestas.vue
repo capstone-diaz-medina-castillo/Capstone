@@ -6,12 +6,11 @@
                 <h2>Aquí podrás crear y gestionar las diferentes encuestas que se podrán aplicar en los diferentes
                     casos.</h2>
             </div>
-            <button class="bg-blue-800 p-3 rounded-lg text-white font-medium">Agregar encuesta</button>
         </header>
         <div>
             <ul>
                 <li v-for="encuesta in encuestas" :key="encuesta.id"
-                    class="rounded-xl font-medium text-xl border border-gray-300 p-5 transform transition-all duration-200 hover:bg-blue-700 hover:scale-105 hover:text-white">
+                    class="rounded-xl mb-5 font-medium text-xl border border-gray-300 p-5 transform transition-all duration-200 hover:bg-blue-700 hover:scale-105 hover:text-white">
                     <button @click="watchQuestions(encuesta)"
                         class="flex justify-between w-full items-center">
                         <h2>{{ encuesta.name }}</h2>

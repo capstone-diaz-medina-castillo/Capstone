@@ -173,5 +173,25 @@ export const encuestas = ref([
             { id: 'q3', question: '¿Cuál es tu mayor miedo?', type: 'text' },
             { id: 'q4', question: '¿Qué te hace feliz?', type: 'text' }
         ]
+    },
+    {
+        id: '2',
+        name: 'Evaluación Psicológica',
+        questions: [
+            { id: 'q1', question: '¿Cómo te sientes hoy?', type: 'text' },
+            { id: 'q2', question: '¿Qué te gustaría mejorar?', type: 'text' },
+            { id: 'q3', question: '¿Cuál es tu mayor miedo?', type: 'text' },
+            { id: 'q4', question: '¿Qué te hace feliz?', type: 'text' }
+        ]
+    },
+    {
+        id: '3',
+        name: 'Registro de hogar',
+        questions: [
+            { id: 'q1', question: '¿Cómo te sientes hoy?', type: 'text' },
+            { id: 'q2', question: '¿Qué te gustaría mejorar?', type: 'text' },
+            { id: 'q3', question: '¿Cuál es tu mayor miedo?', type: 'text' },
+            { id: 'q4', question: '¿Qué te hace feliz?', type: 'text' }
+        ]
     }
 ])

@@ -3,16 +3,18 @@
         <header>
             <div>
                 <h1>Historial</h1>
-                <h2>Aquí podrás ver el historial de modificaciones del caso de {{ caso.userObject?.nna.name }} {{ caso.userObject?.nna.second_name }}</h2>
+                <h2>Aquí podrás ver el historial de modificaciones del caso de {{ caso.userObject?.nna.name }} {{
+                    caso.userObject?.nna.second_name }}</h2>
             </div>
         </header>
         <div>
-            <Table ></Table>
+            <Table :data="historyData" :columns="columns"></Table>
         </div>
     </div>
 </template>
 
 <script setup>
+
 const caso = ref({
     id: '1',
     createdAt: '2024-10-18',
@@ -32,5 +34,66 @@ const caso = ref({
     ]
 })
 
-definePageMeta({layout: 'main'})
+const historyData = ref([
+    {
+        id: '1A',
+        date: '2024-11-10',
+        responsable: 'Jesús Díaz',
+        action: 'Creación de caso',
+        description: 'Se ha creado el caso de un niño de 5 años el cual sus padres se encuentran en el centro penitenciario de Santiago de Chile',
+    },
+    {
+        id: '2A',
+        date: '2024-11-11',
+        responsable: 'Jesús Díaz',
+        action: 'Asignación de profesional',
+        description: 'Se ha asignado a la trabajadora social Raul Medina al caso',
+    },
+    {
+        id: '3A',
+        date: '2024-11-11',
+        responsable: 'Jesús Díaz',
+        action: 'Asignación de profesional',
+        description: 'Se ha asignado al psicólogo Jhonny Castillo al caso',
+    },
+    {
+        id: '4A',
+        date: '2024-11-12',
+        responsable: 'Jesús Díaz',
+        action: 'Creación de formulario',
+        description: 'Se ha creado el formulario inicial del caso',
+    },
+    {
+        id: '5A',
+        date: '2024-11-12',
+        responsable: 'Johnny Castillo',
+        action: 'Creación de formulario',
+        description: 'Se ha respondido el formulario inicial del caso',
+    }
+])
+
+const columns = ref([
+    {
+        key: 'id',
+        header: 'ID',
+    },
+    {
+        key: 'date',
+        header: 'Fecha',
+    },
+    {
+        key: 'responsable',
+        header: 'Responsable',
+    },
+    {
+        key: 'action',
+        header: 'Acción',
+    },
+    {
+        key: 'description',
+        header: 'Descripción',
+    }
+])
+
+definePageMeta({ layout: 'main' })
 </script>
